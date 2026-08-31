@@ -65,32 +65,14 @@
     text-decoration: none;
     color: var(--vi-black);
   }
-  .vi-mark {
-    display: inline-flex;
-    align-items: baseline;
-    font-family: var(--sans);
-    font-weight: 800;
-    font-size: 22px;
-    color: var(--vi-red);
-    letter-spacing: -0.5px;
-    position: relative;
-    padding-right: 4px;
+    .vi-logo {
+    height: 32px;
+    width: auto;
+    display: block;
+    object-fit: contain;
   }
-  .vi-mark::after {
-    content: '';
-    display: inline-block;
-    width: 8px; height: 8px;
-    background: var(--vi-yellow);
-    border-radius: 50%;
-    margin-left: 4px;
-    align-self: flex-end;
-    margin-bottom: 4px;
-  }
-  .nav-brand-text {
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--vi-grey-700);
-    display: none;
+  @media (max-width: 640px) {
+    .vi-logo { height: 28px; }
   }
   @media (min-width: 720px) { .nav-brand-text { display: inline; } }
   .nav-links {
@@ -864,7 +846,7 @@
 <nav>
   <div class="nav-inner">
     <a href="#top" class="nav-brand">
-      <span class="vi-mark">Vi</span>
+      <img src="vi_logo2.png" alt="Vi" class="vi-logo" />
       <span class="nav-brand-text">A Note for Usha Ma'am</span>
     </a>
     <ul class="nav-links">
