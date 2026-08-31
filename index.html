@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yogananda Srihari Prasad Gone — A Note for Usha Ma'am</title>
+<meta name="description" content="A personal note and portfolio prepared for Usha Srivastava, HR Head, Vodafone Idea Limited." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --vi-red: #EE1C25;
+    --vi-red-dark: #B8151C;
+    --vi-yellow: #FDCB05;
+    --vi-black: #1A1A1A;
+    --vi-grey-900: #2A2A2A;
+    --vi-grey-700: #4A4A4A;
+    --vi-grey-500: #7A7A7A;
+    --vi-grey-300: #C8C8C8;
+    --vi-grey-100: #F2F2F2;
+    --vi-grey-50: #FAFAFA;
+    --vi-white: #FFFFFF;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --max-w: 1120px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+  body {
+    font-family: var(--sans);
+    color: var(--vi-black);
+    background: var(--vi-white);
+    line-height: 1.65;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  ::selection { background: var(--vi-yellow); color: var(--vi-black); }
+
+  /* ---------- NAVIGATION ---------- */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    z-index: 100;
+    padding: 14px 32px;
+  }
+  .nav-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--vi-black);
+  }
+  .vi-mark {
+    display: inline-flex;
+    align-items: baseline;
+    font-family: var(--sans);
+    font-weight: 800;
+    font-size: 22px;
+    color: var(--vi-red);
+    letter-spacing: -0.5px;
+    position: relative;
+    padding-right: 4px;
+  }
+  .vi-mark::after {
+    content: '';
+    display: inline-block;
+    width: 8px; height: 8px;
+    background: var(--vi-yellow);
+    border-radius: 50%;
+    margin-left: 4px;
+    align-self: flex-end;
+    margin-bottom: 4px;
+  }
+  .nav-brand-text {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--vi-grey-700);
+    display: none;
+  }
+  @media (min-width: 720px) { .nav-brand-text { display: inline; } }
+  .nav-links {
+    display: none;
+    gap: 26px;
+    list-style: none;
+  }
+  @media (min-width: 900px) { .nav-links { display: flex; } }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--vi-grey-700);
+    font-size: 13.5px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    position: relative;
+  }
+  .nav-links a:hover { color: var(--vi-red); }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px; left: 0;
+    width: 0; height: 2px;
+    background: var(--vi-red);
+    transition: width 0.25s ease;
+  }
+  .nav-links a:hover::after { width: 100%; }
+
+  /* ---------- LAYOUT ---------- */
+  section {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 90px 32px;
+  }
+  @media (max-width: 640px) {
+    section { padding: 60px 22px; }
+    nav { padding: 12px 20px; }
+  }
+
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--vi-red);
+    margin-bottom: 18px;
+    display: inline-block;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    color: var(--vi-black);
+    margin-bottom: 28px;
+    max-width: 780px;
+  }
+  .section-title em {
+    font-style: italic;
+    color: var(--vi-red);
+    font-weight: 500;
+  }
+  p.lede {
+    font-size: 18px;
+    line-height: 1.75;
+    color: var(--vi-grey-700);
+    max-width: 760px;
+    margin-bottom: 18px;
+  }
+  p.body {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--vi-grey-700);
+    max-width: 760px;
+    margin-bottom: 16px;
+  }
+  strong { color: var(--vi-black); font-weight: 600; }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 140px 32px 80px;
+    background:
+      radial-gradient(circle at 90% 10%, rgba(253,203,5,0.10) 0%, transparent 40%),
+      radial-gradient(circle at 5% 90%, rgba(238,28,37,0.06) 0%, transparent 40%),
+      var(--vi-white);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    background: var(--vi-grey-100);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--vi-grey-700);
+    margin-bottom: 28px;
+  }
+  .hero-tag .dot {
+    width: 8px; height: 8px;
+    background: var(--vi-yellow);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.3); }
+  }
+  h1.hero-h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(38px, 6.5vw, 74px);
+    line-height: 1.02;
+    letter-spacing: -1.5px;
+    color: var(--vi-black);
+    margin-bottom: 30px;
+    max-width: 950px;
+  }
+  h1.hero-h1 .accent {
+    color: var(--vi-red);
+    font-style: italic;
+    font-weight: 500;
+  }
+  h1.hero-h1 .yellow-underline {
+    background: linear-gradient(180deg, transparent 65%, var(--vi-yellow) 65%);
+    padding: 0 4px;
+  }
+  .hero-sub {
+    font-size: 19px;
+    line-height: 1.7;
+    color: var(--vi-grey-700);
+    max-width: 700px;
+    margin-bottom: 40px;
+  }
+  .hero-signature {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 17px;
+    color: var(--vi-grey-700);
+    margin-bottom: 44px;
+  }
+  .hero-signature strong { color: var(--vi-red); font-weight: 500; font-style: normal; }
+  .hero-cta {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 14.5px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background: var(--vi-red);
+    color: var(--vi-white);
+  }
+  .btn-primary:hover {
+    background: var(--vi-red-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(238,28,37,0.25);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--vi-black);
+    border: 1.5px solid var(--vi-grey-300);
+  }
+  .btn-secondary:hover {
+    border-color: var(--vi-black);
+    background: var(--vi-grey-50);
+  }
+  .btn svg { width: 16px; height: 16px; }
+
+  /* ---------- OPENING LETTER ---------- */
+  .letter {
+    background: var(--vi-grey-50);
+    padding: 90px 32px;
+    border-radius: 0;
+  }
+  .letter-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .letter-inner .eyebrow { color: var(--vi-red); }
+  .letter-body {
+    font-family: var(--serif);
+    font-size: 21px;
+    line-height: 1.75;
+    color: var(--vi-grey-900);
+    font-weight: 400;
+  }
+  .letter-body p { margin-bottom: 22px; }
+  .letter-body em { color: var(--vi-red); font-style: italic; }
+  .letter-signoff {
+    margin-top: 30px;
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--vi-grey-700);
+    font-size: 18px;
+  }
+
+  /* ---------- TIMELINE (VI JOURNEY) ---------- */
+  .timeline {
+    margin-top: 40px;
+    position: relative;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 18px;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--vi-red) 0%, var(--vi-yellow) 100%);
+  }
+  .timeline-item {
+    position: relative;
+    padding-left: 56px;
+    margin-bottom: 44px;
+  }
+  .timeline-item:last-child { margin-bottom: 0; }
+  .timeline-dot {
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    width: 18px; height: 18px;
+    background: var(--vi-white);
+    border: 3px solid var(--vi-red);
+    border-radius: 50%;
+  }
+  .timeline-item:nth-child(even) .timeline-dot { border-color: var(--vi-yellow); }
+  .timeline-date {
+    font-size: 12.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--vi-red);
+    margin-bottom: 6px;
+  }
+  .timeline-role {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--vi-black);
+    margin-bottom: 4px;
+  }
+  .timeline-loc {
+    font-size: 13px;
+    color: var(--vi-grey-500);
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .timeline-desc {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--vi-grey-700);
+    max-width: 620px;
+  }
+
+  /* ---------- HR THREAD ---------- */
+  .thread-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    margin-top: 40px;
+  }
+  .thread-card {
+    background: var(--vi-white);
+    border: 1px solid var(--vi-grey-100);
+    border-radius: 14px;
+    padding: 28px 26px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .thread-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 3px;
+    background: var(--vi-red);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+  }
+  .thread-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.07);
+  }
+  .thread-card:hover::before { transform: scaleX(1); }
+  .thread-card .year {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--vi-red);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .thread-card h4 {
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--vi-black);
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  .thread-card p {
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: var(--vi-grey-700);
+  }
+
+  /* ---------- READING YOUR WORK — the differentiator ---------- */
+  .reading-work {
+    background:
+      linear-gradient(135deg, rgba(238,28,37,0.03) 0%, rgba(253,203,5,0.05) 100%),
+      var(--vi-white);
+  }
+  .quote-block {
+    padding: 34px 34px 34px 42px;
+    border-left: 4px solid var(--vi-red);
+    background: var(--vi-white);
+    margin: 30px 0 40px;
+    max-width: 780px;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  }
+  .quote-block .attribution {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--vi-red);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+  }
+  .quote-block .quote-text {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.65;
+    color: var(--vi-grey-900);
+  }
+  .frameworks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .framework {
+    background: var(--vi-white);
+    border-radius: 14px;
+    padding: 26px 26px 28px;
+    border: 1px solid var(--vi-grey-100);
+    transition: all 0.3s ease;
+  }
+  .framework:hover {
+    border-color: var(--vi-red);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+  }
+  .framework-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px; height: 34px;
+    background: var(--vi-yellow);
+    color: var(--vi-black);
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .framework h5 {
+    font-family: var(--serif);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--vi-black);
+    margin-bottom: 8px;
+    line-height: 1.35;
+  }
+  .framework .usha-said {
+    font-size: 13.5px;
+    color: var(--vi-grey-500);
+    font-style: italic;
+    margin-bottom: 12px;
+    line-height: 1.55;
+  }
+  .framework .my-take {
+    font-size: 14.5px;
+    color: var(--vi-grey-900);
+    line-height: 1.65;
+    padding-top: 12px;
+    border-top: 1px dashed var(--vi-grey-300);
+  }
+  .framework .my-take-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--vi-red);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  /* ---------- APT CONTEXT ---------- */
+  .apt-context {
+    background: var(--vi-black);
+    color: var(--vi-white);
+    max-width: 100%;
+    padding: 100px 32px;
+  }
+  .apt-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+  .apt-context .section-title { color: var(--vi-white); }
+  .apt-context .section-title em { color: var(--vi-yellow); }
+  .apt-context .eyebrow { color: var(--vi-yellow); }
+  .apt-context p.lede { color: rgba(255,255,255,0.75); }
+  .apt-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-top: 44px;
+    padding-top: 44px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+  .stat-item .stat-num {
+    font-family: var(--serif);
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--vi-yellow);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat-item .stat-label {
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.5;
+  }
+
+  /* ---------- BRIDGE / VALUE PROP ---------- */
+  .bridge-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  @media (min-width: 780px) {
+    .bridge-grid { grid-template-columns: 1fr 1fr 1fr; align-items: stretch; }
+    .bridge-arrow { display: flex; align-items: center; justify-content: center; font-size: 32px; color: var(--vi-red); font-weight: 300; }
+  }
+  .bridge-col {
+    background: var(--vi-grey-50);
+    padding: 30px 26px;
+    border-radius: 14px;
+    border-top: 4px solid var(--vi-red);
+  }
+  .bridge-col.centre { border-top-color: var(--vi-yellow); }
+  .bridge-col h5 {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--vi-black);
+  }
+  .bridge-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  .bridge-col li {
+    font-size: 14.5px;
+    color: var(--vi-grey-700);
+    padding: 6px 0 6px 22px;
+    position: relative;
+    line-height: 1.55;
+  }
+  .bridge-col li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--vi-red);
+    font-weight: 600;
+  }
+
+  /* ---------- HONEST GAP ---------- */
+  .gap-section {
+    background: var(--vi-grey-50);
+    max-width: 100%;
+    padding: 90px 32px;
+  }
+  .gap-inner {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  .gap-inner .section-title em { color: var(--vi-red); }
+  .gap-callout {
+    background: var(--vi-white);
+    padding: 32px 32px;
+    border-radius: 12px;
+    border-left: 4px solid var(--vi-red);
+    margin-top: 30px;
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--vi-grey-900);
+  }
+  .gap-callout strong { color: var(--vi-red); font-weight: 600; }
+
+  /* ---------- 90-DAY PLAN ---------- */
+  .plan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    margin-top: 40px;
+  }
+  .plan-card {
+    background: var(--vi-white);
+    border-radius: 14px;
+    padding: 30px 26px;
+    position: relative;
+    border: 1px solid var(--vi-grey-100);
+    transition: all 0.3s ease;
+  }
+  .plan-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    border-color: var(--vi-red);
+  }
+  .plan-days {
+    display: inline-block;
+    padding: 5px 14px;
+    background: var(--vi-red);
+    color: var(--vi-white);
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+  }
+  .plan-card:nth-child(2) .plan-days { background: var(--vi-yellow); color: var(--vi-black); }
+  .plan-card:nth-child(3) .plan-days { background: var(--vi-black); color: var(--vi-white); }
+  .plan-card h5 {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--vi-black);
+    margin-bottom: 14px;
+    line-height: 1.3;
+  }
+  .plan-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  .plan-card li {
+    font-size: 14.5px;
+    color: var(--vi-grey-700);
+    padding: 5px 0 5px 20px;
+    position: relative;
+    line-height: 1.55;
+  }
+  .plan-card li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 12px;
+    width: 6px; height: 6px;
+    background: var(--vi-red);
+    border-radius: 50%;
+  }
+
+  /* ---------- QR INITIATIVE ---------- */
+  .qr-story {
+    background:
+      linear-gradient(135deg, rgba(253,203,5,0.08) 0%, rgba(255,255,255,1) 60%),
+      var(--vi-white);
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin-top: 44px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: center;
+  }
+  @media (min-width: 780px) {
+    .qr-story { grid-template-columns: 1fr 220px; }
+  }
+  .qr-story h4 {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--vi-black);
+    margin-bottom: 14px;
+    line-height: 1.35;
+  }
+  .qr-story p {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--vi-grey-700);
+    margin-bottom: 12px;
+  }
+  .qr-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .qr-box {
+    width: 140px;
+    height: 140px;
+    background:
+      linear-gradient(45deg, var(--vi-red) 25%, transparent 25%),
+      linear-gradient(-45deg, var(--vi-red) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, var(--vi-red) 75%),
+      linear-gradient(-45deg, transparent 75%, var(--vi-red) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .qr-box::after {
+    content: '';
+    position: absolute;
+    inset: 20%;
+    background: var(--vi-yellow);
+    border-radius: 8px;
+  }
+  .qr-label {
+    font-size: 12px;
+    color: var(--vi-grey-500);
+    margin-top: 12px;
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* ---------- REQUEST / CLOSING ---------- */
+  .closing {
+    background: var(--vi-red);
+    color: var(--vi-white);
+    max-width: 100%;
+    padding: 100px 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .closing::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: var(--vi-yellow);
+    border-radius: 50%;
+    opacity: 0.12;
+  }
+  .closing-inner {
+    max-width: 780px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .closing .eyebrow { color: var(--vi-yellow); }
+  .closing h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(30px, 4.5vw, 46px);
+    line-height: 1.2;
+    color: var(--vi-white);
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+  }
+  .closing h2 em { font-style: italic; color: var(--vi-yellow); font-weight: 500; }
+  .closing p {
+    font-size: 17.5px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.92);
+    margin-bottom: 20px;
+    max-width: 680px;
+  }
+  .closing .signoff {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.25);
+  }
+  .closing .signoff-name {
+    font-family: var(--serif);
+    font-size: 24px;
+    color: var(--vi-white);
+    font-weight: 500;
+  }
+  .closing .signoff-role {
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+    margin-top: 4px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    background: var(--vi-black);
+    color: rgba(255,255,255,0.6);
+    padding: 44px 32px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  footer .foot-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+  footer strong { color: var(--vi-white); }
+  footer a { color: var(--vi-yellow); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .together-tag {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 15px;
+    color: var(--vi-yellow);
+    margin-top: 8px;
+    letter-spacing: 0.3px;
+  }
+
+  /* ---------- SCROLL REVEAL ---------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ---------- PRINT ---------- */
+  @media print {
+    nav { display: none; }
+    .hero { min-height: auto; padding: 40px 20px; }
+    section { padding: 30px 20px; page-break-inside: avoid; }
+    .closing { background: var(--vi-white); color: var(--vi-black); }
+    .closing h2, .closing p, .closing .signoff-name { color: var(--vi-black); }
+    .apt-context { background: var(--vi-white); color: var(--vi-black); }
+    .apt-context .section-title, .apt-context p.lede, .apt-context .stat-label { color: var(--vi-black); }
+    footer { background: var(--vi-white); color: var(--vi-black); }
+    .reveal { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ================== NAV ================== -->
+<nav>
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">
+      <span class="vi-mark">Vi</span>
+      <span class="nav-brand-text">A Note for Usha Ma'am</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#letter">The Note</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#thread">HR Thread</a></li>
+      <li><a href="#reading">Your Work</a></li>
+      <li><a href="#apt">APT Context</a></li>
+      <li><a href="#bridge">Bridge</a></li>
+      <li><a href="#plan">90 Days</a></li>
+      <li><a href="#request">Request</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================== HERO ================== -->
+<div id="top" class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">
+      <span class="dot"></span>
+      Prepared for Usha Srivastava Ma'am · HR Head, Vodafone Idea Ltd.
+    </div>
+    <h1 class="hero-h1">
+      Ma'am, thank you for the <span class="accent">time</span>.<br />
+      This is what I couldn't fit into <span class="yellow-underline">one conversation</span>.
+    </h1>
+    <p class="hero-sub">
+      A short, honest note about who I am, why the HRBP direction matters to me, and how I read the workforce challenge you've been writing about publicly — for the Andhra Pradesh &amp; Telangana circle.
+    </p>
+    <p class="hero-signature">
+      With respect and gratitude, <strong>Yogananda Srihari Prasad Gone</strong> · AGM, Automation Planning · SNOC Hyderabad
+    </p>
+    <div class="hero-cta">
+      <a href="#letter" class="btn btn-primary">
+        Read the note
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#request" class="btn btn-secondary">Skip to my request</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================== OPENING LETTER ================== -->
+<div id="letter" class="letter">
+  <div class="letter-inner reveal">
+    <span class="eyebrow">A short opening</span>
+    <div class="letter-body">
+      <p>Ma'am,</p>
+      <p>I know that a portfolio in the middle of an internal conversation is unusual. I chose this format for one reason: <em>a resume would repeat what you already have on file</em>. This page is meant to add the parts I could not communicate well enough in the interview or in an email.</p>
+      <p>What I want to say honestly, up front: I understand I did not have the depth of direct HRBP experience the AGM role required, and I respect that decision completely. I am not writing to relitigate it.</p>
+      <p>I am writing because the direction — HRBP, People Analytics, HR Transformation — is one I have been consciously walking toward for several years, and I would rather ask you for guidance in the right way than let a rejection quietly close a door I have been trying to open since my MBA.</p>
+      <p>Everything that follows is written with that intent.</p>
+      <p class="letter-signoff">— Yogi</p>
+    </div>
+  </div>
+</div>
+
+<!-- ================== JOURNEY ================== -->
+<section id="journey">
+  <div class="reveal">
+    <span class="eyebrow">01 · My journey at Vi</span>
+    <h2 class="section-title">Two years, three roles, three cities — and one <em>consistent instinct</em>.</h2>
+    <p class="lede">Vi has moved me across some very different parts of the organization. Each move required me to start again in an unfamiliar environment, and I am grateful for it — because it clarified something about where my natural interest sits.</p>
+  </div>
+
+  <div class="timeline reveal">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">May – Jul 2023 · Internship</div>
+      <h3 class="timeline-role">Management Intern — Cloud &amp; Orchestration Planning</h3>
+      <div class="timeline-loc">CODE, Hyderabad · On-site</div>
+      <p class="timeline-desc">Telco Cloud, NFV/CNF, hyperscaler readiness for 4G/5G workloads across AWS, Azure, GCP, Oracle and IBM. My first exposure to how business context, technology choices, and vendor ecosystems come together at Vi scale.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Jul 2024 – Jul 2025</div>
+      <h3 class="timeline-role">Management Trainee — Network Planning &amp; Strategy</h3>
+      <div class="timeline-loc">Corporate Office, Mumbai</div>
+      <p class="timeline-desc">5G network planning, FWA strategy, RAN planning across PAN India and priority circles. Contributed to the FY24–FY25 5G RFP and vendor engagement with Nokia, Ericsson and Samsung — BoQ, compliance, benchmarking. Studied 3GPP releases, DoT/TRAI frameworks, and TM Forum's Autonomous Networks work in person. This is where I began to see the interplay between technology decisions and workforce implications.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Jul 2025 – Present · Current role</div>
+      <h3 class="timeline-role">AGM — Automation Planning</h3>
+      <div class="timeline-loc">SNOC, Hyderabad · On-site</div>
+      <p class="timeline-desc">Driving AI-led transformation of Network Operations — Agentic AI, Generative AI, workflow orchestration, self-healing use cases across RAN, CORE, IP, Access, Microwave. Building ROI-driven automation frameworks that quantify efficiency gains and MTTR reduction. Working with LangChain, LangGraph, MCP-based architectures, RAG — the same capability stack that is about to reshape how HR itself operates.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================== HR THREAD ================== -->
+<section id="thread" style="background: var(--vi-grey-50); max-width: 100%; margin: 0; padding-left: 32px; padding-right: 32px;">
+  <div style="max-width: var(--max-w); margin: 0 auto;">
+    <div class="reveal">
+      <span class="eyebrow">02 · The HR thread that never broke</span>
+      <h2 class="section-title">This interest did not begin with an <em>IJP</em>.</h2>
+      <p class="lede">While my roles have been in technology, my time, my reading, my research, my competitions and my volunteering have consistently pointed the other way — toward people, organizational behaviour, and workforce strategy. A short evidence trail:</p>
+    </div>
+
+    <div class="thread-grid reveal">
+      <div class="thread-card">
+        <div class="year">2022 – 2024 · BITS Pilani MBA</div>
+        <h4>Teaching Assistant — HRM &amp; Organizational Behaviour</h4>
+        <p>Three consecutive semesters supporting faculty on teaching material, cases, questionnaires and examinations across Strategic HRM, Talent Management, Succession Planning, Performance Management, Compensation, Employee &amp; Industrial Relations, Workforce Planning, HR Analytics and OD — using K. Aswathappa and Robbins &amp; Judge as primary texts.</p>
+      </div>
+      <div class="thread-card">
+        <div class="year">2022 – 2024 · Volunteer</div>
+        <h4>Core Member — MANAV, the HR Club</h4>
+        <p>Helped organize HRadya at Interface 2023, ran HR webinars with practitioner HRBPs, and engaged with discussions on how socio-economic shifts change people practices. Multiple case competition wins.</p>
+      </div>
+      <div class="thread-card">
+        <div class="year">Sep 2022 · INTERFACE</div>
+        <h4>2nd Position — HiRe Competition</h4>
+        <p>MANAV HR Club's flagship HR problem-solving competition at BITS Pilani's national management fest.</p>
+      </div>
+      <div class="thread-card">
+        <div class="year">Mar 2025 · Publication</div>
+        <h4>Quiet Quitting — International Journal of Organizational Analysis</h4>
+        <p>Peer-reviewed paper (Emerald Publishing) using the JD-R model and Trait Activation Theory to examine work-life balance, authoritarian leadership, job burnout and personality as antecedents of quiet quitting — with practical implications for retention and engagement.</p>
+      </div>
+      <div class="thread-card">
+        <div class="year">Nov 2025 · INTERFACE</div>
+        <h4>2nd Position — Inkspire White Paper (Alumni Track)</h4>
+        <p>Team LegacyXcelerate. Paper: <em>Succession Planning for the Modern Workforce — Ensuring Leadership Continuity and Sustainable Growth in an Era of Transformation.</em> Recognized among BITS alumni and working professionals.</p>
+      </div>
+      <div class="thread-card">
+        <div class="year">Ongoing · Personal time</div>
+        <h4>Reading, learning, staying close to the field</h4>
+        <p>Even while working full-time in technology roles, I have continued to spend personal time on HR, Organizational Behaviour, People Analytics, leadership and organizational transformation — because that is where the questions genuinely hold my attention.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== READING YOUR WORK ================== -->
+<section id="reading" class="reading-work" style="max-width: 100%; margin: 0; padding-left: 32px; padding-right: 32px;">
+  <div style="max-width: var(--max-w); margin: 0 auto;">
+    <div class="reveal">
+      <span class="eyebrow">03 · Reading your published work</span>
+      <h2 class="section-title">Ma'am, before we meet, I wanted to genuinely <em>read what you have already said</em>.</h2>
+      <p class="lede">Your article <strong>"Bridging Geographies: HR Insights from North India to South India"</strong> and your work on the <strong>Council for Digital Safety and Wellbeing</strong> gave me a much sharper picture of how you are approaching the APT workforce. Below is how I have internalized the six recommendations you laid out — and how I would try to be useful against each, honestly.</p>
+    </div>
+
+    <div class="quote-block reveal">
+      <div class="attribution">Usha Srivastava · LinkedIn, 2025</div>
+      <p class="quote-text">"Both regions have great potential, but unlocking performance requires localized strategies that go beyond generic playbooks... In the South, retention is more about stability, familiarity, role clarity, work-life balance, and steady leadership."</p>
+    </div>
+
+    <div class="frameworks reveal">
+      <div class="framework">
+        <div class="framework-num">1</div>
+        <h5>Localize Leadership Training</h5>
+        <p class="usha-said">"Equip mid-level managers with local culture, respectful authority, inclusive decision-making, and active listening."</p>
+        <p class="my-take"><span class="my-take-label">Where I could contribute</span>Structured, evidence-based content design is one of the things I did most in my TA role — turning theory into case-based, application-oriented modules. I would love to support building manager-enablement material that is genuinely localized for Telangana and Andhra Pradesh, not translated from a Delhi deck.</p>
+      </div>
+      <div class="framework">
+        <div class="framework-num">2</div>
+        <h5>Silent Performers Need Spotlight</h5>
+        <p class="usha-said">"Recognize consistency, team contribution and customer satisfaction — not just loud achievements."</p>
+        <p class="my-take"><span class="my-take-label">Where I could contribute</span>My published paper on Quiet Quitting is essentially about this — people who withdraw before they resign, and the leadership and workload signals that predict it. I have thought about this problem with academic rigour and would bring that lens to how we identify and surface silent performers in APT.</p>
+      </div>
+      <div class="framework">
+        <div class="framework-num">3</div>
+        <h5>Feedback Needs Structure</h5>
+        <p class="usha-said">"Culturally, open feedback doesn't come naturally here. Introduce structured feedback channels and coaching circles."</p>
+        <p class="my-take"><span class="my-take-label">Where I could contribute</span>I have already been doing a small version of this at SNOC with Ramana Pariti Sir — QR-code feedback for cafeteria, washrooms and coffee services. Small in scope, but the instinct is the same: give people a low-friction, non-confrontational way to say what they actually think.</p>
+      </div>
+      <div class="framework">
+        <div class="framework-num">4</div>
+        <h5>Career Pathing with Patience</h5>
+        <p class="usha-said">"Transparent career progression frameworks help retain high performers who might otherwise feel stagnant but are too polite to vocalize it."</p>
+        <p class="my-take"><span class="my-take-label">Where I could contribute</span>My Inkspire white paper was on Succession Planning for the Modern Workforce — leadership continuity, talent pipeline design, transparent progression. This is a topic I have actively studied and written on within the last few months.</p>
+      </div>
+      <div class="framework">
+        <div class="framework-num">5</div>
+        <h5>Celebrate with Sensitivity</h5>
+        <p class="usha-said">"Local festivals, milestones, linguistic pride matter. Personalized engagement builds belonging."</p>
+        <p class="my-take"><span class="my-take-label">Where I could contribute</span>As a Telugu speaker based in Hyderabad, I know the cultural texture of APT from the inside. That is not a professional qualification, but it is a lens — one that would help me notice small things a manager relocated from another region might miss.</p>
+      </div>
+      <div class="framework">
+        <div class="framework-num">6</div>
+        <h5>Data-Driven Localization</h5>
+        <p class="usha-said">"Use engagement surveys broken down by region to guide decision-making — avoiding one-size-fits-all."</p>
+        <p class="my-take"><span class="my-take-label">Where I could contribute</span>This is where my Business Analytics MBA and my current work with dashboards, backend services and data pipelines is most directly transferrable. I can help build the analytics layer under any of the interventions above — segmentation, drivers, cuts by circle, cluster, tenure and role.</p>
+      </div>
+    </div>
+
+    <div class="quote-block reveal" style="margin-top: 50px; border-left-color: var(--vi-yellow);">
+      <div class="attribution" style="color: var(--vi-black); background: var(--vi-yellow); display:inline-block; padding: 4px 12px; border-radius: 4px;">CDSW · Digital Wellbeing</div>
+      <p class="quote-text" style="margin-top: 14px;">"The era of basic digital adoption is complete; our strategic priority must now centre on digital safety, behaviour, and long-term wellness."</p>
+    </div>
+    <p class="body reveal" style="max-width: 780px;">Ma'am, this framing genuinely resonates with me. In my current work I see the paradox first-hand — the same automation and AI systems that reduce operational load can also erode focus, disrupt work-life boundaries, and change what "always available" means for engineers. If there is a way to bring the operational side of Vi and the wellbeing agenda closer together, that is a problem I would be honoured to work on.</p>
+  </div>
+</section>
+
+<!-- ================== APT CONTEXT ================== -->
+<div id="apt" class="apt-context">
+  <div class="apt-inner reveal">
+    <span class="eyebrow">04 · The APT circle context</span>
+    <h2 class="section-title">Why the <em>APT circle</em> question is unlike any other right now.</h2>
+    <p class="lede">Vi's turnaround is at an inflection point, and APT is a circle where several transitions are landing at once — new leadership presence, 5G expansion, subscriber momentum reversing, and a workforce culture that (as you have written) responds better to structured, patient, localized approaches than to broad national templates.</p>
+
+    <div class="apt-stats">
+      <div class="stat-item">
+        <div class="stat-num">Q4FY26</div>
+        <div class="stat-label">Sequential improvement across all seven of the CEO's benchmark parameters — the first "decisive step forward" moment for Vi.</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">Feb '26</div>
+        <div class="stat-label">Subscriber addition turned net positive — a milestone that reflects the impact of sustained network investment.</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">80+</div>
+        <div class="stat-label">Cities where 5G experience is now live, with 4G coverage expanded to a population of over 48 million.</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Values the workforce is being asked to reflect: Passion, Boldness, Trust, Speed, Digital.</div>
+      </div>
+    </div>
+
+    <p class="body reveal" style="color: rgba(255,255,255,0.75); max-width: 780px; margin-top: 40px;">The reason I mention these is not to demonstrate that I follow the CEO's statements. It is because <strong style="color: var(--vi-yellow);">a turnaround workforce is a different workforce</strong>. Retention drivers shift. Manager conversations change. Engagement means something different when the story is starting to turn positive. That is the moment APT is in — and it aligns almost exactly with the localization thesis you have been publicly making.</p>
+  </div>
+</div>
+
+<!-- ================== BRIDGE ================== -->
+<section id="bridge">
+  <div class="reveal">
+    <span class="eyebrow">05 · Where I might genuinely add value</span>
+    <h2 class="section-title">The bridge is the point — <em>technology transformation is people transformation</em>.</h2>
+    <p class="lede">I know I am not a conventional HRBP candidate. My honest answer is that the value I could add is not to replicate what a seasoned HRBP does, but to complement it — to bring the technology, automation and analytics lens to the people agenda at a moment when both sides are converging faster than most organizations are prepared for.</p>
+  </div>
+
+  <div class="bridge-grid reveal">
+    <div class="bridge-col">
+      <h5>What I bring from tech</h5>
+      <ul>
+        <li>2+ years inside Vi across cloud, network strategy and AI automation</li>
+        <li>Working with GenAI, Agentic AI, LangGraph, RAG, MCP architectures</li>
+        <li>Dashboards, backend APIs, workflow orchestration at NOC scale</li>
+        <li>ROI measurement frameworks — quantifying business impact</li>
+        <li>Vendor and cross-functional stakeholder management at scale</li>
+      </ul>
+    </div>
+    <div class="bridge-col centre">
+      <h5>Where they meet</h5>
+      <ul>
+        <li>People Analytics that actually influences decisions</li>
+        <li>HR Transformation and process automation</li>
+        <li>Workforce planning for reskilling in an AI-shift environment</li>
+        <li>Employee experience — QR feedback, digital enablement, self-service</li>
+        <li>Change management for AI-driven role evolution</li>
+      </ul>
+    </div>
+    <div class="bridge-col">
+      <h5>What I bring from HR</h5>
+      <ul>
+        <li>Three semesters TA on HRM &amp; OB at BITS Pilani</li>
+        <li>Peer-reviewed publication on Quiet Quitting (IJOA, Emerald)</li>
+        <li>Succession Planning white paper — Inkspire 2nd place, Nov 2025</li>
+        <li>Core member, MANAV HR Club — case wins, HRadya organizer</li>
+        <li>Genuine, sustained interest — evidenced consistently since 2022</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="qr-story reveal">
+    <div>
+      <h4>A small example already in motion — the QR feedback initiative</h4>
+      <p>Working alongside <strong>Ramana Pariti Sir</strong> at SNOC, I have been contributing to the digitization of employee feedback through QR codes for facilities — washrooms, the cafeteria, coffee services. It is a small initiative in the larger scheme of things.</p>
+      <p>But the reason I mention it is: <strong>this is the instinct.</strong> Small, low-friction, employee-experience-first, feedback-driven. If given a broader mandate under an experienced HRBP, this is the kind of thinking I would bring to more consequential problems.</p>
+    </div>
+    <div class="qr-visual">
+      <div class="qr-box"></div>
+      <div class="qr-label">Employee feedback,<br />where the employee already is.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== HONEST GAP ================== -->
+<div class="gap-section">
+  <div class="gap-inner reveal">
+    <span class="eyebrow">06 · The honest acknowledgment</span>
+    <h2 class="section-title">Ma'am, I also want to be <em>clear about what I am not</em>.</h2>
+    <p class="body">I do not have the same depth of direct, hands-on HRBP or HR Operations experience as someone who has spent several years working exclusively within the HR function.</p>
+    <p class="body">I understand that this is an important consideration — particularly for a role that requires practical exposure to payroll operations, statutory and labour compliance, employee lifecycle processes, PD cycles, MIS and SAP-based reporting, and the day-to-day ER work of an HRBP at cluster level. I do not want to overstate my experience or suggest that academic exposure is equivalent to practical HR execution. It is not.</p>
+    <div class="gap-callout">
+      What I can honestly say is that my interest is <strong>genuine</strong>, my learning agility is one of the things I have most consistently demonstrated across three very different Vi roles in two years, and I am willing to build the practical foundations of the HR function under experienced practitioners — patiently, without shortcuts.
+    </div>
+  </div>
+</div>
+
+<!-- ================== 90-DAY PLAN ================== -->
+<section id="plan">
+  <div class="reveal">
+    <span class="eyebrow">07 · If given the opportunity</span>
+    <h2 class="section-title">A proactive 90-day <em>learning plan</em>, not a proposal.</h2>
+    <p class="lede">This is written in the spirit of "here is how I would use the time" — not a claim that I know how to do the job. It is a way for me to show I have thought seriously about what the first three months would need to look like for someone stepping in from a technology background.</p>
+  </div>
+
+  <div class="plan-grid reveal">
+    <div class="plan-card">
+      <div class="plan-days">Days 1 — 30 · Listen</div>
+      <h5>Learn the terrain before touching it</h5>
+      <ul>
+        <li>Shadow the Cluster HRBP and Sheethal Ma'am's team on the full HR Ops cycle for APT</li>
+        <li>Understand the 300+ employee base — segments, roles, tenure, on-roll vs partner workforce</li>
+        <li>Study Vi's payroll, statutory compliance, SAP/MIS flows and PD cycle governance</li>
+        <li>Read three quarters of engagement survey data for APT, segmented</li>
+        <li>Introductory 1:1s with HR Shared Services, Finance and Legal partners</li>
+      </ul>
+    </div>
+    <div class="plan-card">
+      <div class="plan-days">Days 31 — 60 · Diagnose</div>
+      <h5>Map what is working and what is friction</h5>
+      <ul>
+        <li>Manager conversations across Sales, Retail, Technology, Enterprise, Support</li>
+        <li>New-joinee experience audit for last two quarters in APT</li>
+        <li>Attrition and stay pattern analysis — with the "silent performer" lens</li>
+        <li>Identify two or three moments in the employee lifecycle where structured feedback could be introduced (borrowing directly from your framework)</li>
+        <li>Begin drafting a data view — an APT people dashboard prototype</li>
+      </ul>
+    </div>
+    <div class="plan-card">
+      <div class="plan-days">Days 61 — 90 · Contribute</div>
+      <h5>Small, useful, measurable interventions</h5>
+      <ul>
+        <li>Pilot one manager-enablement module co-designed with the Cluster HRBP</li>
+        <li>Take on one operational lifecycle process end-to-end under supervision</li>
+        <li>Ship the first version of the APT people dashboard for the leadership team</li>
+        <li>Publish a short internal note on what a technology-plus-HR profile can and cannot do — so expectations stay honest</li>
+        <li>Ninety-day review with the Cluster HRBP: what stays, what changes, what is not working</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================== CLOSING / REQUEST ================== -->
+<div id="request" class="closing">
+  <div class="closing-inner reveal">
+    <span class="eyebrow">08 · My request</span>
+    <h2>Ma'am, whichever way this goes, thank you for the <em>time and the read</em>.</h2>
+    <p>My purpose in this note is not to seek an exception to the process or to place anyone in an uncomfortable position. I completely respect the outcome of the selection, and I understand fully if the AGM HRBP Operations role requires a depth of direct HR experience that I do not yet have.</p>
+    <p>What I am respectfully requesting is one of two things — whichever you feel is appropriate:</p>
+    <p style="padding-left: 20px; border-left: 3px solid var(--vi-yellow); margin-top: 20px;"><strong style="color: var(--vi-yellow);">If there is any scope</strong> — even a smaller-scoped, more junior variant of the role, or a supporting position on the APT HRBP team where I can learn the practical foundations under an experienced HRBP — I would be sincerely grateful for that opportunity.</p>
+    <p style="padding-left: 20px; border-left: 3px solid var(--vi-yellow);"><strong style="color: var(--vi-yellow);">If not</strong> — I would be equally grateful for your guidance on how I can realistically build toward a future opportunity in HRBP, People Analytics, HR Transformation, Workforce Strategy or Organizational Effectiveness — the intersection of people and transformation that I have been consciously working toward.</p>
+    <p style="margin-top: 30px;">Ma'am, over the last two years Vi has given me opportunities I did not expect and could not have engineered. Whatever direction this conversation takes, I am grateful — and I will keep learning either way.</p>
+    <div class="signoff">
+      <div class="signoff-name">Yogi</div>
+      <div class="signoff-role">Yogananda Srihari Prasad Gone · AGM, Automation Planning · SNOC, Hyderabad</div>
+    </div>
+  </div>
+</div>
+
+<!-- ================== FOOTER ================== -->
+<footer>
+  <div class="foot-inner">
+    <div><strong>A note prepared for Usha Srivastava Ma'am</strong> — HR Head, Vodafone Idea Limited.</div>
+    <div style="margin-top: 6px;">Built as a portfolio companion to an internal conversation. Not a public communication.</div>
+    <div class="together-tag">Together for Tomorrow</div>
+  </div>
+</footer>
+
+<!-- ================== SCROLL REVEAL SCRIPT ================== -->
+<script>
+  const revealElements = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+  revealElements.forEach((el) => io.observe(el));
+
+  // Smooth-scroll nav offset fix (fixed nav)
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId.length > 1) {
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          const y = target.getBoundingClientRect().top + window.pageYOffset - 60;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
